@@ -63,9 +63,17 @@ Run the AI agent using:
 python main.py
 ```
 
-### Example convos - 
- 
+### Example convos - https://github.com/kairveeehh/AI-dating-adversary-/blob/main/Samples.txt
 
+## Code Structure
+
+1. ASR
+2. Multi-threaded server
+3. model finetuning of mistral 7B
+4. final agent model
+
+
+---
 ## Strategies
 
 1. **Truth Revelation**:
