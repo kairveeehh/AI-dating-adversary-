@@ -141,4 +141,4 @@ This project is licensed under the **MIT License**.
 ---
 
 ## Contact
-For queries or collaborations, contact [your.email@example.com].
+For queries or collaborations, contact [vkairvee@gmail.com].
