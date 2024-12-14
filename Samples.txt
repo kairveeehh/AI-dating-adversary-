@@ -1,0 +1,29 @@
+ conversation_history = [
+    {"sender": "Sam", "content": "You promised you'd be there for me, but you never showed up."},
+    {"sender": "Taylor", "content": "I was busy! Stop acting like the world revolves around you."},
+    {"sender": "Sam", "content": "Busy? You couldn't spare five minutes for someone who needed you?"}
+       ]
+Detailed Analysis:
+Sentiment Analysis: {'POSITIVE': 0, 'NEGATIVE': 3, 'NEUTRAL': 0}
+
+Emotion Scores:
+anger: 0.2385
+
+Toxicity Score: 0.0009
+
+Agent's Dynamic Question: "Sam, Taylor,  when things get tough like this,  how confident are you each that you can rely on the other's support, not just in showing up, but in truly understanding and validating each other's feelings?"
+
+conversation_history = [
+    {"sender": "Nina", "content": "I don’t think I can go through with this presentation. I’m terrified."},
+    {"sender": "Eli", "content": "Hey, you’ve got this! Remember how hard you prepared."},
+    {"sender": "Nina", "content": "What if I mess up? Everyone’s going to laugh at me."} 
+      ]
+Detailed Analysis:
+Sentiment Analysis: {'POSITIVE': 1, 'NEGATIVE': 1, 'NEUTRAL': 1}
+
+Emotion Scores:
+fear: 0.3284
+
+Toxicity Score: 0.0017
+
+Veritas: "Nina, Eli,  seeing this level of anxiety in Nina, how does this moment impact your feeling of mutual support and trust in each other?"      

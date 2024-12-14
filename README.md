@@ -10,6 +10,7 @@ This project integrates **Google GenerativeAI (Gemini)** and **Hugging Face Tran
 ---
 
 ## Features
+- **Automatic Speech Recogniton** : Added voice to text feature via recognition model
 - **Sentiment Analysis**: Classifies recent messages as *Positive*, *Negative*, or *Neutral*.
 - **Emotion Detection**: Extracts emotions (e.g., joy, anger, sadness) from conversations.
 - **Toxicity Detection**: Flags harmful or toxic language and adjusts emotional scores accordingly.
@@ -18,10 +19,12 @@ This project integrates **Google GenerativeAI (Gemini)** and **Hugging Face Tran
   - **Compatibility Probe**: Assesses compatibility dimensions.
   - **Emotional Depth**: Challenges emotional connection and growth.
 - **Advanced Privacy Handling**: Protects sensitive user data by anonymizing emails and phone numbers.
+- **Multithreaded server** : allows both users to simultanaeously send messages 
 
 ---
 
 ## Tech Stack
+- **Fastwhisper and pyaudio** for asr feature
 - **Google GenerativeAI** (Gemini-1.5-flash) for question generation.
 - **Hugging Face Transformers**:
   - Emotion Classification: `michellejieli/emotion_text_classifier`
@@ -30,6 +33,7 @@ This project integrates **Google GenerativeAI (Gemini)** and **Hugging Face Tran
 - **Python**: Core programming language.
 - **NumPy**: For numerical operations.
 - **Datetime**: To track intervention timestamps.
+- **cpp based server (multithreaded)**
 
 ---
 
@@ -37,13 +41,13 @@ This project integrates **Google GenerativeAI (Gemini)** and **Hugging Face Tran
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dating-ai-adversary.git
+   git clone https://github.com/kairveeehh/AI-dating-adversary-
    cd dating-ai-adversary
    ```
 
-2. Install dependencies:
+2. Install dependencies: can refer to https://github.com/kairveeehh/AI-dating-adversary-/requirements.txt
    ```bash
-   pip install google-generativeai transformers numpy
+   pip install -r requirements.txt
    ```
 
 3. Configure your **Google GenerativeAI API Key** and **Hugging Face Token**:
@@ -56,41 +60,11 @@ This project integrates **Google GenerativeAI (Gemini)** and **Hugging Face Tran
 
 Run the AI agent using:
 ```bash
-python dating_ai_adversary.py
+python main.py
 ```
 
-### Example Conversation Input:
-```python
-conversation_history = [
-    {"sender": "Alex", "content": "You're the most useless partner I've ever had. You never do anything right!"},
-    {"sender": "Riley", "content": "Stop yelling at me! You're always so critical and mean."},
-    {"sender": "Alex", "content": "Maybe if you weren't such a complete failure, I wouldn't have to criticize you constantly."},
-    {"sender": "Riley", "content": "I hate you. You make me feel worthless and terrible about myself."},
-    {"sender": "Alex", "content": "Good. Maybe then you'll actually try to improve for once in your pathetic life."}
-]
-```
-
-### Sample Output:
-```
-Intervention Details:
-{
-  "timestamp": "2024-07-16T10:45:32.123Z",
-  "strategy": "truth_revelation",
-  "sentiment_analysis": {
-    "POSITIVE": 0,
-    "NEGATIVE": 4,
-    "NEUTRAL": 1
-  },
-  "emotion_scores": {
-    "anger": 0.75,
-    "sadness": 0.60
-  },
-  "toxicity_score": 0.85,
-  "dynamic_question": "Is there something deeper causing resentment between you two that you've never openly discussed?"
-}
-```
-
----
+### Example convos - 
+ 
 
 ## Code Structure
 
@@ -111,6 +85,8 @@ Intervention Details:
    - Illuminates relational compatibility dimensions.
 3. **Emotional Depth**:
    - Tests emotional strength and vulnerability.
+4. **Abortion**: 
+  - in the case everything is going right .   
 
 ---
 
@@ -120,25 +96,10 @@ Intervention Details:
 
 ---
 
-## Future Enhancements
-- Integrate real-time conversation monitoring.
-- Expand emotion models for more granular classifications.
-- Include multilingual support for global accessibility.
 
----
 
-## Contribution
-Contributions are welcome! To propose improvements:
-1. Fork the repository.
-2. Create a new branch.
-3. Submit a pull request.
 
----
 
-## License
-This project is licensed under the **MIT License**.
-
----
 
 ## Contact
-For queries or collaborations, contact [your.email@example.com].
+For queries or collaborations, contact [vkairvee@gmail.com].
