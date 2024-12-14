@@ -237,7 +237,7 @@ def main():
     Demonstration of the enhanced Dating AI Adversary.
     """
     # Replace with your actual API key
-    api_key = "AIzaSyCf4AWfWKXWdxvKrM4OPzelqSJbeN72Hs0"
+    api_key = "NO_I_DID_NOT_FORGET_TO_REPLACE_THIS"
 
     # Initialize the Dating AI Adversary
     agent = DatingAIAdversary(api_key=api_key)

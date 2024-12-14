@@ -66,17 +66,6 @@ python main.py
 ### Example convos - 
  
 
-## Code Structure
-
-- **`DatingAIAdversary` Class**:
-  - `analyze_sentiment`: Sentiment analysis for recent messages.
-  - `analyze_emotions`: Emotion and toxicity analysis with normalization.
-  - `select_strategy`: Chooses a strategy based on emotions and toxicity.
-  - `intervene`: Generates a dynamic intervention question.
-- **Prompts**: Predefined strategies for *truth revelation*, *compatibility probing*, and *emotional depth exploration*.
-
----
-
 ## Strategies
 
 1. **Truth Revelation**:
